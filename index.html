@@ -26,7 +26,8 @@
    <h1>发票类型判断逻辑</h1> 
    <h2>VAMS</h2> 
    <div class="content"> 
-   <p>核心系统将交易数据传至VMS系统时，VMS以是否白名单、是否税率为零、是否个人业务、是否已在VMS中维护客户基础信息及客户类型为判断条件，判断该条流水数据开票类型，判断逻辑如下表所示：</p>  <table border=1>   <tbody>    <tr>     <th colspan=5>判断条件</th>     <th>发票类型</th>    </tr>    <tr>     <td rowspan=5>白名单</td>     <td colspan=4>税率为零</td>     <td>电子票（04）</td>    </tr>    <tr>     <td rowspan=4>税率不为零</td>     <td colspan=3>个人业务(02)</td>     <td>电子票（04）</td>    </tr>    <tr>     <td rowspan=3>法人业务（01）</td>     <td colspan=2>VMS中未维护客户基础信息</td>     <td>专票（01）</td>    </tr>    <tr>     <td rowspan=2>VMS中已维护客户基础信息</td>     <td>客户类型为非一般纳税人（02）</td>     <td>电子票（04）</td>    </tr>    <tr>     <td>客户类型为一般纳税人（01）</td>     <td>专票（01）</td>    </tr>    <tr>     <td rowspan=5>非白名单</td>     <td colspan=4>税率为零</td>     <td>普票（02）</td>    </tr>    <tr>     <td rowspan=4>税率不为零</td>     <td colspan=3>个人业务(02)</td>     <td>普票（02）</td>    </tr>    <tr>     <td rowspan=3>法人业务（01）</td>     <td colspan=2>VMS中未维护客户基础信息</td>     <td>专票（01）</td>    </tr>    <tr>     <td rowspan=2>VMS中已维护客户基础信息</td>     <td>客户类型为非一般纳税人（02）</td>     <td>普票（02）</td>    </tr>    <tr>     <td>客户类型为一般纳税人（01）</td>     <td>专票（01）</td>    </tr>   </tbody>  </table>  <hr /> 
+   <p>核心系统将交易数据传至VMS系统时，VMS以是否白名单、是否税率为零、是否个人业务、是否已在VMS中维护客户基础信息及客户类型为判断条件，判断该条流水数据开票类型，判断逻辑如下表所示：</p> 
+     <table border=1>   <tbody>    <tr>     <th colspan=5>判断条件</th>     <th>发票类型</th>    </tr>    <tr>     <td rowspan=5>白名单</td>     <td colspan=4>税率为零</td>     <td>电子票（04）</td>    </tr>    <tr>     <td rowspan=4>税率不为零</td>     <td colspan=3>个人业务(02)</td>     <td>电子票（04）</td>    </tr>    <tr>     <td rowspan=3>法人业务（01）</td>     <td colspan=2>VMS中未维护客户基础信息</td>     <td>专票（01）</td>    </tr>    <tr>     <td rowspan=2>VMS中已维护客户基础信息</td>     <td>客户类型为非一般纳税人（02）</td>     <td>电子票（04）</td>    </tr>    <tr>     <td>客户类型为一般纳税人（01）</td>     <td>专票（01）</td>    </tr>    <tr>     <td rowspan=5>非白名单</td>     <td colspan=4>税率为零</td>     <td>普票（02）</td>    </tr>    <tr>     <td rowspan=4>税率不为零</td>     <td colspan=3>个人业务(02)</td>     <td>普票（02）</td>    </tr>    <tr>     <td rowspan=3>法人业务（01）</td>     <td colspan=2>VMS中未维护客户基础信息</td>     <td>专票（01）</td>    </tr>    <tr>     <td rowspan=2>VMS中已维护客户基础信息</td>     <td>客户类型为非一般纳税人（02）</td>     <td>普票（02）</td>    </tr>    <tr>     <td>客户类型为一般纳税人（01）</td>     <td>专票（01）</td>    </tr>   </tbody>  </table>  <hr /> 
    </div> 
     </div>
  <div> 
@@ -34,7 +35,11 @@
    <h1>专项费用、动支单号</h1> 
    <h2>ERP</h2> 
    <div class="content"> 
-   <h3>1、 动支单号的问题：</h3>  <p>动支单号对应费用申请的单据，如果有已提交的费用申请单，那么就会有这个选项。我查了一下11300970有，而11308253没有，所以显示不同。</p>  <h3>2、 专项费用的问题：</h3>  <p>Table:ZTM_FYBX_ZXFYMX Function:ZCHECK_FYSX 有三个图片在img下</p>  <img alt="数据表" src="img/专项费用动支单号1.png" /> <img alt="程序截图1"   src="img/专项费用动支单号2.png" /> <img alt="程序截图2" src="img/专项费用动支单号3.png" />  <hr />  </div> </div>
+   <h3>1、 动支单号的问题：</h3>  
+     <p>动支单号对应费用申请的单据，如果有已提交的费用申请单，那么就会有这个选项。我查了一下11300970有，而11308253没有，所以显示不同。</p>
+     <h3>2、 专项费用的问题：</h3> 
+     <p>Table:ZTM_FYBX_ZXFYMX Function:ZCHECK_FYSX 有三个图片在img下</p> 
+     <img alt="数据表" src="img/专项费用动支单号1.png" /> <img alt="程序截图1"   src="img/专项费用动支单号2.png" /> <img alt="程序截图2" src="img/专项费用动支单号3.png" />  <hr />  </div> </div>
  <div>  
    <img class="titleimg" alt="头像1" src="img/mark1.png" /> 
    <h1>费用报销经验集</h1> 
