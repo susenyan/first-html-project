@@ -10,7 +10,7 @@ I add some css style in the html file. The style relocated the elements in the h
 
 Third step:using database
 I use mysql to store some information.
-In the database 'demo1', there are two tables 'systemlist' and 'articlelist'.
-'systemlist' store the systemname, abbr and the image for the perticular system.
-'articlelist' store the article name, direction, and which system it belongs to.
+In the database 'demo1', there are two tables 'systemlist' and 'articlelist'.'systemlist' store the systemname, abbr and the image for the perticular system.'articlelist' store the article name, direction, and which system it belongs to.
 Now,I want to show the articles stored in the database, so html is not enough, I have to use PHP.
+
+In the php file,I learned how to connect the databse.Then read the items in the table. Next,open the .docx files and translate the content to string. Finally show in the html and css style just as what i have done in the second step.
