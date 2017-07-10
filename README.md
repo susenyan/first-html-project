@@ -8,3 +8,9 @@ I create a html file,adding 4 articles into it and of course some images ,titles
 Second step:using css to make it beautiful
 I add some css style in the html file. The style relocated the elements in the html file and now it looks more beautiful.
 
+Third step:using database
+I use mysql to store some information.
+In the database 'demo1', there are two tables 'systemlist' and 'articlelist'.
+'systemlist' store the systemname, abbr and the image for the perticular system.
+'articlelist' store the article name, direction, and which system it belongs to.
+Now,I want to show the articles stored in the database, so html is not enough, I have to use PHP.
